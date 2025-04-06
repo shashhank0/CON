@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada Work Permits | CWC Immigration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Same header as index.html -->
+  <header>
+    <!-- Copy header from index.html -->
+  </header>
+
+  <main>
+    <section class="program-hero">
+      <div class="container">
+        <h1>Canada Work Permit Programs</h1>
+        <p>Your pathway to working legally in Canada</p>
+      </div>
+    </section>
+
+    <section class="program-overview">
+      <div class="container">
+        <div class="program-tabs">
+          <button class="tab-btn active" data-tab="lmia">LMIA-Based</button>
+          <button class="tab-btn" data-tab="exempt">LMIA-Exempt</button>
+          <button class="tab-btn" data-tab="open">Open Work Permits</button>
+        </div>
+        
+        <div class="tab-content active" id="lmia">
+          <h2>LMIA-Based Work Permits</h2>
+          <p>For employers who need to hire foreign workers when no Canadians are available</p>
+          <div class="program-cards">
+            <div class="program-card">
+              <h3>Temporary Foreign Worker Program</h3>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> For high-wage and low-wage positions</li>
+                <li><i class="fas fa-check-circle"></i> Employer must obtain LMIA</li>
+                <li><i class="fas fa-check-circle"></i> Typically job-specific</li>
+              </ul>
+              <a href="#" class="btn-outline">Learn More</a>
+            </div>
+            <!-- More program cards -->
+          </div>
+        </div>
+        
+        <div class="tab-content" id="exempt">
+          <!-- LMIA-Exempt content -->
+        </div>
+      </div>
+    </section>
+
+    <section class="eligibility-calculator">
+      <div class="container">
+        <h2>Work Permit Eligibility Calculator</h2>
+        <form id="wp-calculator">
+          <!-- Calculator form fields -->
+          <button type="submit" class="btn-primary">Check Eligibility</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="process-steps">
+      <div class="container">
+        <h2>Our Work Permit Process</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Initial Assessment</h3>
+            <p>Free evaluation of your qualifications</p>
+          </div>
+          <!-- More steps -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Same footer as index.html -->
+  <footer>
+    <!-- Copy footer from index.html -->
+  </footer>
+
+  <script>
+    // Tab functionality
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.getAttribute('data-tab');
+        // Tab switching logic
+      });
+    });
+  </script>
+</body>
+</html>
